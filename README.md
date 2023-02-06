@@ -1,10 +1,9 @@
-# _JavaScript Template_
+# _Weather App_
 
-## EDIT BEFORE COMMITING
 
-#### By _Ashe Urban & Vera Weikel_
+#### By _Ashe Urban, Mitchell Gantz, and David Jandron_
 
-#### _This project is serving as a template respository for future work_
+#### _This project demonstrates basic API setup_
 
 ## Technologies Used
 
@@ -14,16 +13,14 @@
 - _Webpack_
 - _eslint_
 - _babel_
-- _jest_
+- _Open Weather API_
 
 
 ## Description
 
-_This project template was built off of Epicodus' lessons on TDD and js environments_
+_Practice making API calls in JavaScript. Start by following along with the pre-work and then build out a basic application that uses an API call. Your projects should include full development environments, a .env file for sensitive API variables, and complete README instructions, including instructions for setting up an API key as needed. Make sure to practice parsing JSON and API call error handling, too._
 
-_As such, there are tests and js files for a triangle and rectangle constructor, these should be updated per project._
-
-_Lesson prompt:_ https://www.learnhowtoprogram.com/intermediate-javascript/test-driven-development-and-environments-with-javascript/basic-project-structure
+_Lesson prompt:_ https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/openweather-api-giphy-api
 
 ## Setup/Installation Requirements
 
@@ -36,6 +33,13 @@ _Lesson prompt:_ https://www.learnhowtoprogram.com/intermediate-javascript/test-
 - _npm run start to build and launch server_
 - _proceed to update files to reflect new project_
 
+### Setup/Installation for using Open Weather API
+- _Sign up for an account, and sign in._
+- _Once you are signed in, click on the API keys tab._
+- _Locate the API key called Default. You'll use this key in every request you make to the OpenWeather API._
+- _Add .env file to .gitignore, commit and push (before touching .env)._
+- _Touch .env and add API_KEY=[YOUR API KEY], replacing brackets with your individual key._
+
 ## Known Bugs
 
 - _None_
@@ -44,4 +48,4 @@ _Lesson prompt:_ https://www.learnhowtoprogram.com/intermediate-javascript/test-
 
 _MIT_
 
-Copyright (c) _2023_ _Ashe Urban_ _Vera Weikel_
+Copyright (c) _2023_ _Ashe Urban_ _Mitchell Gantz_ _David Jandron_

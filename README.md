@@ -38,7 +38,7 @@ _Lesson prompt:_ https://www.learnhowtoprogram.com/intermediate-javascript/async
 - _Once you are signed in, click on the API keys tab._
 - _Locate the API key called Default. You'll use this key in every request you make to the OpenWeather API._
 - _Add .env file to .gitignore, commit and push (before touching .env)._
-- _Touch .env and add API_KEY=[YOUR API KEY], replacing brackets with your individual key._
+- _Touch .env and add API _ KEY=[YOUR API KEY], replacing brackets with your individual key and removing any spaces._
 
 ## Known Bugs
 

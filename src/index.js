@@ -13,6 +13,8 @@ function getWeather (city) {
     const response = JSON.parse(this.responseText);
     if (this.status === 200) {
       printElements(response, city);
+    } else {
+      printError(this, response, city);
     }
   });
 
@@ -23,20 +25,24 @@ function getWeather (city) {
 
 // UI Logic
 
-function printElements(apiResponce, city) {
+function printError(request, apiResponse, city) {
+  document.querySelector('#showResponse').innerText =  `There was an error accessing the weather data for ${city}: ${request.status} ${request.statusText}: ${apiResponse.message}`;
+}
+
+function printElements(apiResponse, city) {
   document.querySelector('#showResponse').innerText = `The Humitdity in ${city} is ${apiResponse.main.humidity}%.
   The temperature in Kelvins is ${apiResponse.main.temp} degrees.`;
-  }
+}
 
-  function handleFormSubmission(event) {
-    event.preventDefault();
-    const city = document.querySelector('#location').value;
-    document.querySelector('#location').value = null;
-    getWeather(city);
-  }
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const city = document.querySelector('#location').value;
+  document.querySelector('#location').value = null;
+  getWeather(city);
+}
 
-  window.addEventListener("load", function() {
+window.addEventListener("load", function() {
   document.querySelector('form').addEventListener("submit", handleFormSubmission);
-  });
+});
 
   

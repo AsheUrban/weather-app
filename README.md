@@ -3,7 +3,8 @@
 
 #### By _Ashe Urban, Mitchell Gantz, and David Jandron_
 
-#### _This project demonstrates basic API setup_
+#### main BRANCH: _This project demonstrates basic API setup using XMLHttpRequest object_
+#### fetch-api BRANCH: _This project demonstrates basic API setup using fetch API._ 
 
 ## Technologies Used
 
@@ -39,6 +40,8 @@ _Lesson prompt:_ https://www.learnhowtoprogram.com/intermediate-javascript/async
 - _Locate the API key called Default. You'll use this key in every request you make to the OpenWeather API._
 - _Add .env file to .gitignore, commit and push (before touching .env)._
 - _Touch .env and add API _ KEY=[YOUR API KEY], replacing brackets with your individual key and removing any spaces._
+
+* _To use XMLHttpRequest Obect remain on main branch. To work with fetch APIs checkout fetch-api._
 
 ## Known Bugs
 

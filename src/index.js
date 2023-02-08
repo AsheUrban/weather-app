@@ -4,13 +4,13 @@ import "./css/styles.css";
 import WeatherService from "./weather-service";
 
 // Business Logic
-function getWeather(city) {
-  let promise = WeatherService.getWeather(city);
-  promise.then(function(weatherDataArray) {
-    printElements(weatherDataArray);
-  }, function(errorArray) {
-    printError(errorArray);
-  });
+async function getWeather(city) {
+  const response = await WeatherService.getWeather(city);
+  if(response.main) {
+    printElements(response, city);
+  } else {
+    printError(response, city);
+  }
 }
 
 // UI Logic

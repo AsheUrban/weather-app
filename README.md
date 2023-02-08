@@ -1,10 +1,10 @@
 # _Weather App_
 
-
 #### By _Ashe Urban, Mitchell Gantz, and David Jandron_
 
 #### main BRANCH: _This project demonstrates basic API setup using XMLHttpRequest object_
 #### fetch-api BRANCH: _This project demonstrates basic API setup using fetch API._ 
+#### async-await BRANCH: _This project demonstrates basic API setup using async and await keywords._
 
 ## Technologies Used
 
@@ -15,7 +15,6 @@
 - _eslint_
 - _babel_
 - _Open Weather API_
-
 
 ## Description
 
@@ -41,7 +40,7 @@ _Lesson prompt:_ https://www.learnhowtoprogram.com/intermediate-javascript/async
 - _Add .env file to .gitignore, commit and push (before touching .env)._
 - _Touch .env and add API _ KEY=[YOUR API KEY], replacing brackets with your individual key and removing any spaces._
 
-* _To use XMLHttpRequest Obect remain on main branch. To work with fetch APIs checkout fetch-api._
+* _To use XMLHttpRequest Obect remain on main branch. To work with fetch APIs checkout fetch-api. And to work with async and await keywords, checkout async-await._
 
 ## Known Bugs
 

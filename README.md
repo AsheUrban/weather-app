@@ -2,9 +2,9 @@
 
 #### By _Ashe Urban, Mitchell Gantz, and David Jandron_
 
-main BRANCH: _This project demonstrates basic API setup using XMLHttpRequest object_
-fetch-api BRANCH: _This project demonstrates basic API setup using fetch API._ 
-async-await BRANCH: _This project demonstrates basic API setup using async and await keywords._
+- main BRANCH: _This project demonstrates basic API setup using XMLHttpRequest object_
+- fetch-api BRANCH: _This project demonstrates basic API setup using fetch API._ 
+- async-await BRANCH: _This project demonstrates basic API setup using async and await keywords._
 
 ## Technologies Used
 

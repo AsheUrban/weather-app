@@ -1,18 +1,15 @@
 export default class WeatherService {
   static getWeather(city) {
-    return new Promise(function(resolve, reject) {
-      let request = new XMLHttpRequest();
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`;
-      request.addEventListener("loadend", function() {
-        const response = JSON.parse(this.responseText);
-        if (this.status === 200) {
-          resolve([response, city]);
+    return fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`).then(function(response) {
+        if (!response.ok) {
+          const errorMessage = `${response.status} ${response.statusText}`;
+          throw new Error(errorMessage);
         } else {
-          reject([this, response, city]);
+         return response.json();
         }
-    });
-    request.open("GET", url, true);
-    request.send();
+    })
+    .catch(function(error) {
+      return error;
     });
   }
 }
